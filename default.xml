@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="jethro"/>
+
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+
+  <project remote="yocto" revision="jethro" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="jethro" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+
+  <project remote="oe" revision="jethro" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="qt5" revision="jethro" name="meta-qt5" path="source/meta-qt5"/>
+
+</manifest>
