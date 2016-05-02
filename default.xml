@@ -4,11 +4,16 @@
   <default sync-j="4" revision="jethro"/>
 
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/klustree" name="klustree"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
 
   <project remote="yocto" revision="jethro" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="jethro" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+  
+  <project remote="klustree" revision="master" name="rpi-bsp-base" path="sources/base">
+    <copyfile dest="setup-environment" src="setup-environment"/>
+  </project>
 
   <project remote="oe" revision="jethro" name="meta-openembedded" path="sources/meta-openembedded"/>
 
